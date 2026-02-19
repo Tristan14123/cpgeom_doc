@@ -1,0 +1,80 @@
+site_name: Site de Documentation CPGEOM
+site_description: Centre de ressources techniques spécialisé en géomatique et systèmes d'information géographique
+site_author: CPGEOM Team
+
+# Repository
+repo_name: cpgeom_doc
+repo_url: https://github.com/votre-utilisateur/cpgeom_doc
+
+# Configuration du thème
+theme:
+  name: readthedocs
+  language: fr
+  highlightjs: true
+  navigation_depth: 4
+  collapse_navigation: false
+  
+# Extensions Markdown
+markdown_extensions:
+  - admonition
+  - codehilite:
+      css_class: codehilite
+      use_pygments: true
+  - toc:
+      permalink: true
+  - tables
+  - fenced_code
+  - footnotes
+  - attr_list
+  - def_list
+  - meta
+  - md_in_html
+  - smarty
+  - wikilinks
+  - abbr
+  - pymdownx.arithmatex
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_generator: !!python/name:pymdownx.emoji.to_svg
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.magiclink
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+
+# Structure de navigation
+nav:
+  - Accueil: index.md
+  - Prérequis: page1.md
+  - Geodatabase ESRI: page3.md
+
+# Plugins
+plugins:
+  - search:
+      lang: fr
+  - minify:
+      minify_html: true
+
+# Configuration des documents
+docs_dir: docs
+site_dir: site
+
+# Paramètres supplémentaires
+extra:
+  version: 1.0.0
+  social:
+    - type: github
+      link: https://github.com/votre-utilisateur
+    - type: gitlab
+      link: https://gitlab.com/votre-utilisateur
+
