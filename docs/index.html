@@ -4,8 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Documentation Technique</title>
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
-    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
     <style>
         * {
             margin: 0;
@@ -17,29 +15,8 @@
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             line-height: 1.6;
             color: #333;
-            position: relative;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             min-height: 100vh;
-            margin: 0;
-            padding: 0;
-        }
-
-        #map {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            z-index: -1;
-        }
-
-        .overlay {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(102, 126, 234, 0.85);
-            z-index: -1;
         }
 
         .container {
@@ -287,8 +264,6 @@
     </style>
 </head>
 <body>
-    <div id="map"></div>
-    <div class="overlay"></div>
     <div class="container">
         <header>
             <h1>📚 Documentation Technique</h1>
@@ -319,6 +294,11 @@
                         <td>📋 <strong>Prérequis</strong></td>
                         <td>Configuration initiale de l'environnement de développement</td>
                         <td><a href="page1.html">Page 1: Prérequis</a></td>
+                    </tr>
+                    <tr>
+                        <td>🗄️ <strong>Geodatabase ESRI</strong></td>
+                        <td>Format propriétaire ESRI, types de données et administration</td>
+                        <td><a href="page3.html">Page 3: Geodatabase</a></td>
                     </tr>
                 </tbody>
             </table>
@@ -368,47 +348,5 @@
             <p><a href="page1.html">Page 1: Prérequis</a> → Votre première étape vers la maîtrise technique</p>
         </footer>
     </div>
-
-    <script>
-        // Initialiser la carte Leaflet
-        var map = L.map('map', {
-            center: [48.8566, 2.3522], // Paris (centre par défaut)
-            zoom: 5,
-            zoomControl: false // Cacher les contrôles de zoom pour un effet plus propre
-        });
-
-        // Ajouter la couche de tuiles OpenStreetMap
-        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-            attribution: '© OpenStreetMap contributors',
-            maxZoom: 18
-        }).addTo(map);
-
-        // Ajouter quelques marqueurs d'exemple (villes technologiques)
-        var cities = [
-            {name: "Paris", coords: [48.8566, 2.3522]},
-            {name: "San Francisco", coords: [37.7749, -122.4194]},
-            {name: "Tokyo", coords: [35.6762, 139.6503]},
-            {name: "Londres", coords: [51.5074, -0.1278]},
-            {name: "Berlin", coords: [52.5200, 13.4050]}
-        ];
-
-        cities.forEach(function(city) {
-            L.marker(city.coords).addTo(map)
-                .bindPopup('<b>' + city.name + '</b><br>Centre technologique');
-        });
-
-        // Animation douce de la carte
-        setTimeout(function() {
-            map.setView([48.8566, 2.3522], 5, {animate: true});
-        }, 1000);
-
-        // Empêcher l'interaction avec la carte (effet décoratif uniquement)
-        map.dragging.disable();
-        map.touchZoom.disable();
-        map.doubleClickZoom.disable();
-        map.scrollWheelZoom.disable();
-        map.boxZoom.disable();
-        map.keyboard.disable();
-    </script>
 </body>
 </html>
