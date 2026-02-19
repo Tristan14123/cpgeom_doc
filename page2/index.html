@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="author" content="CPGEOM Team" />
+      <link rel="shortcut icon" href="../img/favicon.ico" />
+    <title>🗺️ Sources de Données - Site de Documentation CPGEOM</title>
+    <link rel="stylesheet" href="../css/theme.css" />
+    <link rel="stylesheet" href="../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "\ud83d\uddfa\ufe0f Sources de Donn\u00e9es";
+        var mkdocs_page_input_path = "page2.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href=".." class="icon icon-home"> Site de Documentation CPGEOM
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="..">📚 Centre de Formation en Géomatique</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../page1/">📋 Prérequis Techniques</a>
+                </li>
+              </ul>
+              <ul class="current">
+                <li class="toctree-l1 current"><a class="reference internal current" href="#">🗺️ Sources de Données</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#types-de-donnees">📊 Types de données</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#donnees-de-reference">🎯 Données de référence</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#donnees-a-creer-a-calibrer">🛠️ Données à créer (à calibrer)</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#tables-distantes">🔗 Tables distantes</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#spot-satellite-pour-lobservation-de-la-terre">🛰️ SPOT - Satellite Pour l'Observation de la Terre</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#acces-wms-via-qgis">Accès WMS via QGIS</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#referentiel-ign-bdtopo">🗺️ Référentiel IGN BDTOPO</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#caracteristiques">Caractéristiques</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#ign-projets-ia">🏢 IGN - Projets IA</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#projets-principaux">Projets principaux</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#bonnes-pratiques">📋 Bonnes pratiques</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#gestion-des-donnees-de-reference">Gestion des données de référence</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#integration-des-donnees-ign">Intégration des données IGN</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#ressources-externes">🔗 Ressources externes</a>
+    </li>
+    </ul>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../page3/">🗄️ Geodatabase ESRI</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../page4/">Qualité</a>
+                </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="..">Site de Documentation CPGEOM</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href=".." class="icon icon-home" aria-label="Docs"></a></li>
+      <li class="breadcrumb-item active">🗺️ Sources de Données</li>
+    <li class="wy-breadcrumbs-aside">
+          <a href="https://github.com/votre-utilisateur/cpgeom_doc/edit/master/docs/page2.md">Edit on cpgeom_doc</a>
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="sources-de-donnees">🗺️ Sources de Données</h1>
+<p>Les sources de données en géomatique : références et données à créer.</p>
+<hr />
+<h2 id="types-de-donnees">📊 Types de données</h2>
+<h3 id="donnees-de-reference">🎯 Données de référence</h3>
+<ul>
+<li><strong>Intégrité conservée</strong> : Ne doivent pas être tronquées</li>
+<li><strong>Fiabilité</strong> : Servent de base pour les autres données</li>
+<li><strong>Stabilité</strong> : Mises à jour contrôlées</li>
+</ul>
+<h3 id="donnees-a-creer-a-calibrer">🛠️ Données à créer (à calibrer)</h3>
+<ul>
+<li><strong>Calibration nécessaire</strong> : Alignement sur les références</li>
+<li><strong>Mise à jour continue</strong> : Évolution temporelle</li>
+<li><strong>Validation requise</strong> : Contrôle qualité essentiel</li>
+</ul>
+<hr />
+<h2 id="tables-distantes">🔗 Tables distantes</h2>
+<p>!!! note "Possibilité technique"
+    Les tables distantes permettent d'accéder à des données sans duplication locale.</p>
+<hr />
+<h2 id="spot-satellite-pour-lobservation-de-la-terre">🛰️ SPOT - Satellite Pour l'Observation de la Terre</h2>
+<h3 id="acces-wms-via-qgis">Accès WMS via QGIS</h3>
+<ul>
+<li><strong>Source IGN</strong> : Connexion directe depuis QGIS</li>
+<li><strong>Données satellitaires</strong> : Imagerie à haute résolution</li>
+<li><strong>Mise à jour régulière</strong> : Nouvelles acquisitions programmées</li>
+</ul>
+<hr />
+<h2 id="referentiel-ign-bdtopo">🗺️ Référentiel IGN BDTOPO</h2>
+<h3 id="caracteristiques">Caractéristiques</h3>
+<ul>
+<li><strong>Base de données topographique</strong> : Précision centimétrique</li>
+<li><strong>Couverture nationale</strong> : Ensemble du territoire français</li>
+<li><strong>Mise à jour continue</strong> : Actualisations trimestrielles</li>
+</ul>
+<hr />
+<h2 id="ign-projets-ia">🏢 IGN - Projets IA</h2>
+<h3 id="projets-principaux">Projets principaux</h3>
+<ul>
+<li><strong>COSIA</strong> : Classification optimisée des surfaces</li>
+<li><strong>OCSGE</strong> : Occupation des sols à grande échelle</li>
+<li><strong>CRAHAB</strong> : Cartographie du résidentiel</li>
+<li><strong>LIDARHD</strong> : Modèles 3D haute densité</li>
+<li><strong>GEO K PHYTO</strong> : Données phytoécologiques</li>
+<li><strong>BD FORÊT</strong> : Base de données forestière</li>
+<li><strong>BD HAIE</strong> : Réseau linéaire de haies</li>
+</ul>
+<hr />
+<h2 id="bonnes-pratiques">📋 Bonnes pratiques</h2>
+<h3 id="gestion-des-donnees-de-reference">Gestion des données de référence</h3>
+<p>!!! warning "Règle d'or"
+    Une donnée de référence doit conserver son intégrité, il ne faut pas la tronquer.</p>
+<h3 id="integration-des-donnees-ign">Intégration des données IGN</h3>
+<ol>
+<li><strong>Vérifier la compatibilité</strong> : Systèmes de projection</li>
+<li><strong>Valider la qualité</strong> : Contrôle des attributs</li>
+<li><strong>Documenter les sources</strong> : Métadonnées complètes</li>
+</ol>
+<hr />
+<h2 id="ressources-externes">🔗 Ressources externes</h2>
+<ul>
+<li><strong>IGN</strong> : <a href="https://www.ign.fr/">https://www.ign.fr/</a></li>
+<li><strong>Géoportail</strong> : <a href="https://www.geoportail.gouv.fr/">https://www.geoportail.gouv.fr/</a></li>
+<li><strong>Data Gouv</strong> : <a href="https://www.data.gouv.fr/">https://www.data.gouv.fr/</a></li>
+</ul>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../page1/" class="btn btn-neutral float-left" title="📋 Prérequis Techniques"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../page3/" class="btn btn-neutral float-right" title="🗄️ Geodatabase ESRI">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+        <span>
+          <a href="https://github.com/votre-utilisateur/cpgeom_doc" class="fa fa-code-fork" style="color: #fcfcfc"> cpgeom_doc</a>
+        </span>
+    
+    
+      <span><a href="../page1/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../page3/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "..";</script>
+    <script src="../js/theme_extra.js"></script>
+    <script src="../js/theme.js"></script>
+      <script src="../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>
