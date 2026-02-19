@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prérequis - Documentation Technique</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+            animation: fadeInDown 0.8s ease;
+        }
+
+        .back-link {
+            display: inline-block;
+            background: rgba(255,255,255,0.2);
+            color: white;
+            padding: 10px 20px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-bottom: 20px;
+            transition: all 0.3s ease;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255,255,255,0.3);
+        }
+
+        .back-link:hover {
+            transform: translateY(-2px);
+            background: rgba(255,255,255,0.3);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            color: white;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .content {
+            background: rgba(255,255,255,0.95);
+            border-radius: 15px;
+            padding: 40px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            animation: fadeIn 1s ease;
+        }
+
+        h2 {
+            color: #667eea;
+            margin-bottom: 25px;
+            font-size: 1.8rem;
+            border-bottom: 2px solid #667eea;
+            padding-bottom: 10px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .code-block {
+            background: #2d3748;
+            color: #e2e8f0;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+            font-family: 'Courier New', monospace;
+            overflow-x: auto;
+            position: relative;
+        }
+
+        .code-block::before {
+            content: 'bash';
+            position: absolute;
+            top: 5px;
+            right: 10px;
+            background: #667eea;
+            color: white;
+            padding: 2px 8px;
+            border-radius: 5px;
+            font-size: 0.8rem;
+            font-weight: bold;
+        }
+
+        .code-block code {
+            display: block;
+            line-height: 1.5;
+        }
+
+        .steps-list {
+            list-style: none;
+            margin: 20px 0;
+        }
+
+        .steps-list li {
+            padding: 15px 0;
+            border-bottom: 1px solid #e0e0e0;
+            display: flex;
+            align-items: flex-start;
+            gap: 15px;
+        }
+
+        .steps-list li:last-child {
+            border-bottom: none;
+        }
+
+        .step-number {
+            background: #667eea;
+            color: white;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            flex-shrink: 0;
+        }
+
+        .note {
+            background: #f7fafc;
+            border-left: 4px solid #667eea;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 5px;
+        }
+
+        .note strong {
+            color: #667eea;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .content {
+                padding: 20px;
+            }
+            
+            .code-block {
+                padding: 15px;
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="index.html" class="back-link">← Retour à l'accueil</a>
+            <h1>📋 Prérequis</h1>
+        </header>
+
+        <main class="content">
+            <section>
+                <h2>🐧 Activer / Installer WSL</h2>
+                <p>Pour commencer, nous allons installer le Sous-système Windows pour Linux (WSL) qui vous permettra d'utiliser un environnement Linux directement sur Windows.</p>
+                
+                <div class="code-block">
+                    <code>wsl --install
+
+wsl --list</code>
+                </div>
+
+                <div class="note">
+                    <strong>Note :</strong> Après l'installation, redémarrez votre ordinateur et suivez les instructions pour configurer votre distribution Linux préférée (Ubuntu est recommandée).
+                </div>
+            </section>
+
+            <section>
+                <h2>🔧 Installer Git</h2>
+                <p>Une fois WSL installé, ouvrez votre terminal Linux et installez Git pour le contrôle de version.</p>
+                
+                <div class="code-block">
+                    <code>sudo apt update
+sudo apt install git</code>
+                </div>
+
+                <div class="note">
+                    <strong>Configuration recommandée :</strong> Après l'installation, configurez votre identité Git :
+                    <div class="code-block">
+                        <code>git config --global user.name "Votre Nom"
+git config --global user.email "votre.email@example.com"</code>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <h2>🚀 Créer un repository sur GitHub</h2>
+                <p>Suivez ces étapes pour créer votre premier repository GitHub :</p>
+                
+                <ul class="steps-list">
+                    <li>
+                        <span class="step-number">1</span>
+                        <div>
+                            <strong>Allez sur github.com</strong> et connectez-vous à votre compte (ou créez-en un si nécessaire).
+                        </div>
+                    </li>
+                    <li>
+                        <span class="step-number">2</span>
+                        <div>
+                            <strong>Cliquez sur "New repository"</strong> dans le menu déroulant en haut à droite.
+                        </div>
+                    </li>
+                    <li>
+                        <span class="step-number">3</span>
+                        <div>
+                            <strong>Donnez un nom au repo</strong> (par exemple : "ma-documentation").
+                        </div>
+                    </li>
+                    <li>
+                        <span class="step-number">4</span>
+                        <div>
+                            <strong>Cocher "Add a README file"</strong> pour initialiser votre repository avec un fichier de description.
+                        </div>
+                    </li>
+                    <li>
+                        <span class="step-number">5</span>
+                        <div>
+                            <strong>Cliquez sur "Create repository"</strong> pour finaliser la création.
+                        </div>
+                    </li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>📥 Cloner le repository</h2>
+                <p>Une fois votre repository créé sur GitHub, vous pouvez le cloner localement pour commencer à travailler :</p>
+                
+                <div class="code-block">
+                    <code>git clone https://github.com/votre-utilisateur/votre-repo.git</code>
+                </div>
+
+                <div class="note">
+                    <strong>Important :</strong> Remplacez <code>votre-utilisateur</code> et <code>votre-repo</code> par vos véritables nom d'utilisateur et nom de repository GitHub.
+                </div>
+            </section>
+
+            <section>
+                <h2>🎉 Prochaines étapes</h2>
+                <p>Félicitations ! Vous avez maintenant configuré votre environnement de développement. Vous pouvez :</p>
+                <ul class="steps-list">
+                    <li>
+                        <span class="step-number">✓</span>
+                        <div>
+                            <strong>Utiliser WSL</strong> pour un environnement Linux performant
+                        </div>
+                    </li>
+                    <li>
+                        <span class="step-number">✓</span>
+                        <div>
+                            <strong>Gérer vos versions</strong> avec Git
+                        </div>
+                    </li>
+                    <li>
+                        <span class="step-number">✓</span>
+                        <div>
+                            <strong>Collaborer</strong> via GitHub
+                        </div>
+                    </li>
+                </ul>
+            </section>
+        </main>
+    </div>
+</body>
+</html>
