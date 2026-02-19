@@ -190,7 +190,7 @@
         <main class="content">
             <section>
                 <h2>🐧 Activer / Installer WSL</h2>
-                <p>Pour commencer, nous allons installer le Sous-système Windows pour Linux (WSL) qui vous permettra d'utiliser un environnement Linux directement sur Windows.</p>
+                <p>Pour commencer, installer le Sous-système Windows pour Linux (WSL) qui vous permettra d'utiliser un environnement Linux directement sur Windows.</p>
                 
                 <div class="code-block">
                     <code>wsl --install
@@ -241,7 +241,7 @@ git config --global user.email "votre.email@example.com"</code>
                     <li>
                         <span class="step-number">3</span>
                         <div>
-                            <strong>Donnez un nom au repo</strong> (par exemple : "ma-documentation").
+                            <strong>Donnez un nom au repo</strong> (par exemple : "cpgeom_doc").
                         </div>
                     </li>
                     <li>
@@ -260,7 +260,7 @@ git config --global user.email "votre.email@example.com"</code>
             </section>
 
             <section>
-                <h2>📥 Cloner le repository</h2>
+                <h2>📥 Possibilité de cloner le repository</h2>
                 <p>Une fois votre repository créé sur GitHub, vous pouvez le cloner localement pour commencer à travailler :</p>
                 
                 <div class="code-block">
@@ -274,27 +274,26 @@ git config --global user.email "votre.email@example.com"</code>
 
             <section>
                 <h2>🎉 Prochaines étapes</h2>
-                <p>Félicitations ! Vous avez maintenant configuré votre environnement de développement. Vous pouvez :</p>
-                <ul class="steps-list">
-                    <li>
-                        <span class="step-number">✓</span>
-                        <div>
-                            <strong>Utiliser WSL</strong> pour un environnement Linux performant
-                        </div>
-                    </li>
-                    <li>
-                        <span class="step-number">✓</span>
-                        <div>
-                            <strong>Gérer vos versions</strong> avec Git
-                        </div>
-                    </li>
-                    <li>
-                        <span class="step-number">✓</span>
-                        <div>
-                            <strong>Collaborer</strong> via GitHub
-                        </div>
-                    </li>
-                </ul>
+                <p>Félicitations ! Vous avez maintenant configuré votre environnement de développement. Voici les commandes Git essentielles :</p>
+                
+                <h3>🚀 Initialisation du repository</h3>
+                <div class="code-block">
+                    <code>git init</code>
+                </div>
+
+                <h3>📤 Premier push</h3>
+                <div class="code-block">
+                    <code>git push -u origin main</code>
+                </div>
+
+                <h3>🔐 Configuration Git - retenir les mots de passe</h3>
+                <div class="code-block">
+                    <code>git config --global credential.helper store</code>
+                </div>
+
+                <div class="note">
+                    <strong>Astuce :</strong> Avec cette configuration, Git mémorisera vos identifiants GitHub pour éviter de les saisir à chaque push.
+                </div>
             </section>
         </main>
     </div>
