@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <meta name="author" content="CPGEOM Team">
+        
+        <link rel="shortcut icon" href="../img/favicon.ico">
+        <title>Page6 - Site de Documentation CPGEOM</title>
+        <link href="../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../css/fontawesome.min.css" rel="stylesheet">
+        <link href="../css/brands.min.css" rel="stylesheet">
+        <link href="../css/solid.min.css" rel="stylesheet">
+        <link href="../css/v4-font-face.min.css" rel="stylesheet">
+        <link href="../css/base.css" rel="stylesheet">
+        <link id="hljs-light" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" >
+        <link id="hljs-dark" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css" disabled>
+        <link href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" rel="stylesheet">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="..">Site de Documentation CPGEOM</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="nav-item">
+                                <a href=".." class="nav-link">Accueil</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Introduction</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../page1/" class="dropdown-item">📋 Prérequis Techniques</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Sources de données</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../page2/" class="dropdown-item">🗺️ Sources de Données</a>
+</li>
+                                    
+<li>
+    <a href="../page2.1/" class="dropdown-item">Sources de données</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Méthodologie</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../page3/" class="dropdown-item">🗄️ Geodatabase ESRI</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Qualité</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../page4/" class="dropdown-item">Qualité</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Interopérabilité et métadonnées</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../page5/" class="dropdown-item">Page5</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle active" aria-current="page" role="button" data-bs-toggle="dropdown"  aria-expanded="false">MEMologie</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="./" class="dropdown-item active" aria-current="page">Page6</a>
+</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ms-md-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" href="../page5/" class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" class="nav-link disabled">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="https://github.com/votre-utilisateur/cpgeom_doc/edit/master/docs/page6.md" class="nav-link">Edit on cpgeom_doc
+                                    </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-bs-toggle="collapse" data-bs-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-bs-level="2"><a href="#lart-du-meme" class="nav-link">L'Art du MEME</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="2"><a href="#lhistoire-fascinante-des-meme" class="nav-link">📖 L'Histoire Fascinante des MEME</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="2"><a href="#conclusion-plus-quun-simple-phenomene" class="nav-link">🎭 Conclusion : Plus qu'un Simple Phénomène</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="2"><a href="#les-memes-cartographiques-quand-la-geomatique-devient-virale" class="nav-link">🗺️ Les Mèmes Cartographiques : Quand la Géomatique Devient Virale</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 style="text-align: center; color: #007acc;">La Memologie</h1>
+
+<h2 id="lart-du-meme">L'Art du MEME</h2>
+<p><br></p>
+<hr />
+<p><br></p>
+<h2 id="lhistoire-fascinante-des-meme">📖 L'Histoire Fascinante des MEME</h2>
+<p><br></p>
+<h3 id="les-origines-anciennes">🌅 Les Origines Anciennes</h3>
+<p>Avant Internet, les mèmes existaient déjà sous forme de <strong>culture populaire</strong> transmis de génération en génération :</p>
+<ul>
+<li><strong>Contes et légendes</strong> racontés autour du feu</li>
+<li><strong>Blagues et expressions</strong> populaires dans les villages  </li>
+<li><strong>Chansons folkloriques</strong> qui traversaient les époques</li>
+<li><strong>Images récurrentes</strong> dans l'art et la littérature</li>
+</ul>
+<p><br></p>
+<hr />
+<p><br></p>
+<h3 id="lere-digitale-naissance-du-meme-moderne">🚀 L'Ère Digitale : Naissance du Mème Moderne</h3>
+<h4 id="1996-le-premier-meme-internet"><strong>1996 : Le Premier Mème Internet</strong></h4>
+<p>Le terme "mème" est popularisé par <strong>Richard Dawkins</strong> dans son livre "The Selfish Gene" (1976), mais c'est avec Internet que le concept explose.</p>
+<h4 id="annees-2000-lage-dor"><strong>Années 2000 : L'Âge d'Or</strong></h4>
+<ul>
+<li><strong>Dancing Baby</strong> (1996) : Premier véritable mème viral</li>
+<li><strong>All Your Base Are Belong To Us</strong> (2001) : Premier mème gaming</li>
+<li><strong>LOLcats</strong> (2006) : Les chats prennent le contrôle d'Internet</li>
+<li><strong>Rickroll</strong> (2007) : L'art de la surprise</li>
+</ul>
+<p><br></p>
+<hr />
+<p><br></p>
+<h3 id="les-grandes-familles-de-memes">🎨 Les Grandes Familles de Mèmes</h3>
+<p><br></p>
+<h4 id="les-memes-humoristiques">😂 <strong>Les Mèmes Humoristiques</strong></h4>
+<ul>
+<li><strong>Distracted Boyfriend</strong> : Les dilemmes modernes</li>
+<li><strong>Woman Yelling at a Cat</strong> : Les confrontations épiques</li>
+<li><strong>Two Buttons</strong> : Les choix impossibles de la vie</li>
+</ul>
+<p><br></p>
+<h4 id="les-memes-intellectuels">🧠 <strong>Les Mèmes Intellectuels</strong></h4>
+<ul>
+<li><strong>Expanding Brain</strong> : L'évolution de la pensée</li>
+<li><strong>Galaxy Brain</strong> : Quand les idées deviennent cosmiques</li>
+<li><strong>Drake Hotline Bling</strong> : Les préférences et rejets</li>
+</ul>
+<p><br></p>
+<h4 id="les-memes-professionnels">💼 <strong>Les Mèmes Professionnels</strong></h4>
+<ul>
+<li><strong>This is Fine</strong> : Le bureau en feu</li>
+<li><strong>Success Kid</strong> : Les petites victoires</li>
+<li><strong>Hide the Pain Harold</strong> : Le sourire face à l'adversité</li>
+</ul>
+<p><br></p>
+<hr />
+<p><br></p>
+<h3 id="limpact-culturel-global">🌍 L'Impact Culturel Global</h3>
+<p><br></p>
+<h4 id="un-langage-universel"><strong>Un Langage Universel</strong></h4>
+<p>Les mèmes ont créé une <strong>nouvelle forme de communication</strong> qui transcende les frontières :</p>
+<ul>
+<li>🌐 <strong>Instantanément compréhensible</strong> partout dans le monde</li>
+<li>📱 <strong>Adapté aux réseaux sociaux</strong> et à la communication rapide</li>
+<li>🎭 <strong>Expression d'émotions complexes</strong> en une seule image</li>
+<li>🤝 <strong>Créateur de liens</strong> entre générations et cultures</li>
+</ul>
+<p><br></p>
+<h4 id="le-pouvoir-politique"><strong>Le Pouvoir Politique</strong></h4>
+<p>Les mèmes sont devenus des <strong>outils d'influence</strong> :</p>
+<ul>
+<li><strong>Campagnes de sensibilisation</strong> qui deviennent virales</li>
+<li><strong>Satire politique</strong> accessible à tous</li>
+<li><strong>Mobilisation citoyenne</strong> par l'humour</li>
+<li><strong>Désinformation</strong> et son combat</li>
+</ul>
+<p><br></p>
+<hr />
+<p><br></p>
+<h3 id="lavenir-de-la-memologie">🔮 L'Avenir de la MEMologie</h3>
+<p><br></p>
+<h4 id="lere-de-lia"><strong>L'Ère de l'IA</strong></h4>
+<p>Avec l'intelligence artificielle, nous entrons dans une nouvelle ère :</p>
+<ul>
+<li><strong>Mèmes générés par IA</strong> : Création infinie et personnalisée</li>
+<li><strong>Mèmes interactifs</strong> : Qui s'adaptent à chaque utilisateur</li>
+<li><strong>Mèmes 3D/VR</strong> : Expériences immersives</li>
+<li><strong>Mèmes intelligents</strong> : Qui comprennent le contexte</li>
+</ul>
+<p><br></p>
+<h4 id="la-memeconomie"><strong>La Méméconomie</strong></h4>
+<p>L'économie des mèmes devient réalité :</p>
+<ul>
+<li><strong>Créateurs professionnels</strong> de mèmes</li>
+<li><strong>Marketing par mème</strong> : La nouvelle publicité</li>
+<li><strong>Plateformes monétisées</strong> de partage de mèmes</li>
+<li><strong>Droits d'auteur</strong> et propriété intellectuelle</li>
+</ul>
+<p><br></p>
+<hr />
+<p><br></p>
+<h3 id="pourquoi-la-memologie-est-importante">🎯 Pourquoi la MEMologie est Importante</h3>
+<p><br></p>
+<p>La MEMologie n'est pas juste une question d'humour. C'est :</p>
+<ul>
+<li><strong>🧠 Psychologie sociale</strong> : Comment les idées se propagent</li>
+<li><strong>📊 Anthropologie moderne</strong> : Étude des comportements collectifs</li>
+<li><strong>💬 Linguistique visuelle</strong> : Nouvelle forme de langage</li>
+<li><strong>🔄 Sociologie numérique</strong> : Comment nous connectons et partageons</li>
+</ul>
+<p><br></p>
+<hr />
+<p><br></p>
+<h3 id="les-lecons-de-la-memologie">📚 Les Leçons de la MEMologie</h3>
+<p><br></p>
+<ol>
+<li><strong>Simplicité</strong> : Les meilleures idées sont les plus simples</li>
+<li><strong>Universalité</strong> : Ce qui nous touche nous touche tous</li>
+<li><strong>Adaptabilité</strong> : Les mèmes évoluent avec le temps</li>
+<li><strong>Communauté</strong> : Rien n'existe sans partage</li>
+</ol>
+<p><br></p>
+<hr />
+<p><br></p>
+<h2 id="conclusion-plus-quun-simple-phenomene">🎭 Conclusion : Plus qu'un Simple Phénomène</h2>
+<p>La MEMologie représente <strong>l'évolution naturelle de la communication humaine</strong> à l'ère numérique. C'est le reflet de notre société, de nos angoisses, de nos joies et de notre capacité collective à trouver de l'humour même dans les situations les plus complexes.</p>
+<p><br></p>
+<blockquote>
+<p><em>"Un mème vaut mille mots, et une communauté de mèmes vaut une révolution."</em></p>
+</blockquote>
+<p><br></p>
+<hr />
+<p><br></p>
+<div style="text-align: center; font-style: italic; color: #666;">
+<p>🎭 La MEMologie continue d'écrire son histoire... un mème à la fois 🎭</p>
+</div>
+
+<p><br></p>
+<hr />
+<p><br></p>
+<h2 id="les-memes-cartographiques-quand-la-geomatique-devient-virale">🗺️ Les Mèmes Cartographiques : Quand la Géomatique Devient Virale</h2>
+<p><br></p>
+<h3 id="lhumour-sig-qui-fait-le-tour-du-monde">🌍 L'Humour SIG qui Fait le Tour du Monde</h3>
+<p><br></p>
+<h4 id="here-be-dragons"><strong>"Here Be Dragons" 🐉</strong></h4>
+<p>Le mème cartographique le plus ancien ! Sur les cartes médiévales, les zones inconnues étaient marquées <em>"Hic sunt dracones"</em> (Ici il y a des dragons).</p>
+<p><br></p>
+<h4 id="flat-earth-society"><strong>"Flat Earth Society" 🌍➡️📐</strong></h4>
+<p>Les mèmes sur les terre-platistes qui utilisent des projections cartographiques pour "prouver" leurs théories :</p>
+<ul>
+<li><strong>Projection de Mercator</strong> : "Regardez, l'Antarctique entoure tout !"</li>
+<li><strong>Projection de Peters</strong> : "Les proportions sont fausses !"</li>
+<li><strong>Globe vs Map</strong> : Le débat éternel</li>
+</ul>
+<p><br></p>
+<h4 id="gis-analyst-problems"><strong>"GIS Analyst Problems" 💻🗺️</strong></h4>
+<p>Les mèmes que seuls les géomaticiens comprennent vraiment :</p>
+<ul>
+<li><strong>"My coordinate system is wrong"</strong> : La panique du SIGiste</li>
+<li><strong>"Projection mismatch"</strong> : Quand les couches ne s'alignent pas</li>
+<li><strong>"Buffer distance"</strong> : Les débats sans fin sur les distances de tampon</li>
+<li><strong>"Attribute table"</strong> : Quand Excel devient votre meilleur ennemi</li>
+</ul>
+<p><br></p>
+<hr />
+<p><br></p>
+<h3 id="les-memes-des-reseaux-sociaux-geospatiaux">📱 Les Mèmes des Réseaux Sociaux Géospatiaux</h3>
+<p><br></p>
+<h4 id="google-street-view-fails"><strong>"Google Street View Fails" 🚗📸</strong></h4>
+<p>Les captures d'écran hilarantes de Google Street View :</p>
+<ul>
+<li><strong>Personnages inattendus</strong> : Animaux, costumes, situations absurdes</li>
+<li><strong>Glitches technologiques</strong> : Voitures flottantes, bâtiments déformés</li>
+<li><strong>Moments intimes</strong> : Capturés au mauvais moment</li>
+</ul>
+<p><br></p>
+<h4 id="map-porn-vs-map-shaming"><strong>"Map Porn vs Map Shaming" 🌍😍😂</strong></h4>
+<p>Les deux faces de la cartographie sur Reddit :</p>
+<ul>
+<li><strong>Map Porn</strong> : Cartes magnifiques, design incroyable</li>
+<li><strong>Map Shaming</strong> : Pires erreurs cartographiques, projections horribles</li>
+</ul>
+<p><br></p>
+<h4 id="what-three-words"><strong>"What Three Words" 📍📝</strong></h4>
+<p>Les mèmes sur l'application de géolocalisation :</p>
+<ul>
+<li><strong>Adresses absurdes</strong> : ///trottoir.pain.ordinateur</li>
+<li><strong>Situations ironiques</strong> ///perdu.mais.pas.trop</li>
+<li><strong>Traductions automatiques</strong> : Les résultats surprenants</li>
+</ul>
+<p><br></p>
+<hr />
+<p><br></p>
+<h3 id="les-memes-academiques-en-geomatique">🎓 Les Mèmes Académiques en Géomatique</h3>
+<p><br></p>
+<h4 id="thesis-defense"><strong>"Thesis Defense" 🎓🗺️</strong></h4>
+<p>Les mèmes sur la soutenance de thèse en géomatique :</p>
+<ul>
+<li><strong>"My data is clean"</strong> : Le mensonge le plus courant</li>
+<li><strong>"Statistical significance"</strong> : p &lt; 0.05, la magie opère</li>
+<li><strong>"Future work"</strong> : La section la plus longue de toute thèse</li>
+</ul>
+<p><br></p>
+<h4 id="conference-problems"><strong>"Conference Problems" ✈️📊</strong></h4>
+<p>Les mèmes des conférences géospatiales :</p>
+<ul>
+<li><strong>"Poster session"</strong> : 10 personnes pour 50 posters</li>
+<li><strong>"Network error"</strong> : Le WiFi qui lâche pendant votre présentation</li>
+<li><strong>"Free coffee"</strong> : La vraie raison de votre présence</li>
+</ul>
+<p><br></p>
+<hr />
+<p><br></p>
+<h3 id="les-memes-technologies-geospatiales">🛰️ Les Mèmes Technologies Géospatiales</h3>
+<p><br></p>
+<h4 id="gps-issues"><strong>"GPS Issues" 🛰️📱</strong></h4>
+<p>Quand la technologie nous joue des tours :</p>
+<ul>
+<li><strong>"GPS accuracy"</strong> : "Je suis à 3 mètres... de l'océan"</li>
+<li><strong>"Signal lost"</strong> : Dans les endroits les plus inattendus</li>
+<li><strong>"Battery died"</strong> : Au milieu de nulle part</li>
+</ul>
+<p><br></p>
+<h4 id="drone-mapping"><strong>"Drone Mapping" 🚁📸</strong></h4>
+<p>Les mèmes sur la cartographie par drone :</p>
+<ul>
+<li><strong>"No-fly zones"</strong> : Les restrictions partout</li>
+<li><strong>"Weather conditions"</strong> : Le vent qui ruiné tout</li>
+<li><strong>"Processing time"</strong> : Des heures pour quelques minutes de vol</li>
+</ul>
+<p><br></p>
+<hr />
+<p><br></p>
+<h3 id="pourquoi-les-memes-cartographiques-fonctionnent">🎯 Pourquoi les Mèmes Cartographiques Fonctionnent</h3>
+<p><br></p>
+<p>Les mèmes géospatiaux sont spéciaux car ils combinent :</p>
+<ul>
+<li><strong>🧠 Connaissance technique</strong> : Seuls les initiés comprennent vraiment</li>
+<li><strong>🌍 Universalité</strong> : Tout le monde utilise des cartes</li>
+<li><strong>😂 Absurdité</strong> : Les situations SIG sont souvent ridicules</li>
+<li><strong>🤝 Communauté</strong> : Crée des liens entre professionnels du monde entier</li>
+</ul>
+<p><br></p>
+<hr />
+<p><br></p>
+<h3 id="lavenir-des-memes-geomatiques">🔮 L'Avenir des Mèmes Géomatiques</h3>
+<p><img src="image-2.png" style="max-width:480px;"/></p>
+<p><br></p>
+<p>Avec les nouvelles technologies, de nouveaux mèmes apparaissent :</p>
+<ul>
+<li><strong>🤖 IA générative</strong> : Cartes créées par IA qui deviennent des mèmes</li>
+<li><strong>🥽 Réalité augmentée</strong> : Overlays absurdes dans le monde réel</li>
+<li><strong>🌐 Métavers</strong> : Cartes de mondes virtuels qui deviennent virales</li>
+<li><strong>🛰️ Satellite imagery</strong> : Images satellite surprenantes qui deviennent des mèmes</li>
+</ul>
+<p><br></p>
+<hr />
+<p><br></p>
+<div style="text-align: center; font-style: italic; color: #007acc;">
+<p>🗺️ La cartographie rencontre la culture populaire... et ça devient viral ! 🗺️</p>
+</div>
+
+<p><img src="image-3.png" style="max-width:480px;"/></p></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script src="../js/bootstrap.bundle.min.js"></script>
+        <script>
+            var base_url = "..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../js/base.js"></script>
+        <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+        <script src="../search/main.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>
