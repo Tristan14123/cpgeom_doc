@@ -8,7 +8,7 @@
         <meta name="author" content="CPGEOM Team">
         
         <link rel="shortcut icon" href="../img/favicon.ico">
-        <title>Qualité - Site de Documentation CPGEOM</title>
+        <title>Sources de données - Site de Documentation CPGEOM</title>
         <link href="../css/bootstrap.min.css" rel="stylesheet">
         <link href="../css/fontawesome.min.css" rel="stylesheet">
         <link href="../css/brands.min.css" rel="stylesheet">
@@ -47,7 +47,7 @@
                                 </ul>
                             </li>
                             <li class="nav-item dropdown">
-                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Sources de données</a>
+                                <a href="#" class="nav-link dropdown-toggle active" aria-current="page" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Sources de données</a>
                                 <ul class="dropdown-menu">
                                     
 <li>
@@ -55,7 +55,7 @@
 </li>
                                     
 <li>
-    <a href="../page2.1/" class="dropdown-item">Sources de données</a>
+    <a href="./" class="dropdown-item active" aria-current="page">Sources de données</a>
 </li>
                                 </ul>
                             </li>
@@ -69,11 +69,11 @@
                                 </ul>
                             </li>
                             <li class="nav-item dropdown">
-                                <a href="#" class="nav-link dropdown-toggle active" aria-current="page" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Résultats</a>
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Résultats</a>
                                 <ul class="dropdown-menu">
                                     
 <li>
-    <a href="./" class="dropdown-item active" aria-current="page">Qualité</a>
+    <a href="../page4/" class="dropdown-item">Qualité</a>
 </li>
                                 </ul>
                             </li>
@@ -95,17 +95,17 @@
                             </a>
                         </li>
                             <li class="nav-item">
-                                <a rel="prev" href="../page3/" class="nav-link">
+                                <a rel="prev" href="../page2/" class="nav-link">
                                     <i class="fa fa-arrow-left"></i> Previous
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a rel="next" href="../page5/" class="nav-link">
+                                <a rel="next" href="../page3/" class="nav-link">
                                     Next <i class="fa fa-arrow-right"></i>
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a href="https://github.com/votre-utilisateur/cpgeom_doc/edit/master/docs/page4.md" class="nav-link">Edit on cpgeom_doc
+                                <a href="https://github.com/votre-utilisateur/cpgeom_doc/edit/master/docs/page2.1.md" class="nav-link">Edit on cpgeom_doc
                                     </a>
                             </li>
                     </ul>
@@ -126,46 +126,22 @@
     <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
         <ul class="nav flex-column">
             
-            <li class="nav-item" data-bs-level="1"><a href="#qualite" class="nav-link">Qualité</a>
+            <li class="nav-item" data-bs-level="1"><a href="#sources-de-donnees" class="nav-link">Sources de données</a>
               <ul class="nav flex-column">
-            <li class="nav-item" data-bs-level="2"><a href="#interoperabilite-des-donnees" class="nav-link">Interopérabilité des données.</a>
+            <li class="nav-item" data-bs-level="2"><a href="#saint-lo-agglo" class="nav-link">Saint-Lô Agglo</a>
               <ul class="nav flex-column">
               </ul>
             </li>
               </ul>
             </li>
             
-            <li class="nav-item" data-bs-level="1"><a href="#inspire" class="nav-link">INSPIRE =</a>
+            <li class="nav-item" data-bs-level="1"><a href="#sources-de-donnees_1" class="nav-link">🗂 Sources de Données</a>
               <ul class="nav flex-column">
-            <li class="nav-item" data-bs-level="2"><a href="#les-criteres-de-qualite" class="nav-link">Les critères de qualité:</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-bs-level="2"><a href="#les-mesures-les-methodes-devaluations-le-resultat" class="nav-link">Les mesures, les méthodes d’évaluations, le résultat.</a>
+            <li class="nav-item" data-bs-level="2"><a href="#donnees-sig-internes" class="nav-link">🗺 Données SIG — Internes</a>
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-bs-level="2"><a href="#strategies-deterministe-probabiliste-ou-expert" class="nav-link">stratégies : déterministe, probabiliste ou expert.</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-bs-level="2"><a href="#exhaustivite" class="nav-link">Exhaustivité :</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-bs-level="2"><a href="#coherence-temporelle" class="nav-link">Cohérence temporelle:</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-bs-level="2"><a href="#coherence-logique" class="nav-link">cohérence logique:</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-bs-level="2"><a href="#precision-thematique" class="nav-link">Précision thématique :</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-bs-level="2"><a href="#mettre-en-place-des-validateurs-et-des-chaines-de-traitements" class="nav-link">Mettre en place des validateurs et des chaînes de traitements.</a>
+            <li class="nav-item" data-bs-level="2"><a href="#donnees-sig-externes" class="nav-link">🌐 Données SIG — Externes</a>
               <ul class="nav flex-column">
               </ul>
             </li>
@@ -176,53 +152,70 @@
 </div></div>
                     <div class="col-md-9" role="main">
 
-<h1 id="qualite">Qualité</h1>
-<p>ISO 19157 qualité  (2013)
-ISO 19115,19139 métadonnées</p>
-<h2 id="interoperabilite-des-donnees">Interopérabilité des données.</h2>
-<p>Non obligatoire mais très recommandé
-*voir format EDIGEO pour le cadastre</p>
-<p>Définition des standards, exemple PLUI</p>
-<p>Voir : Consigne de saisie des métadonnées INSPIRE .</p>
-<h1 id="inspire">INSPIRE =</h1>
-<p>directive européenne , création des portails de téléchargement.</p>
-<p>qualité des métadonnées = qualité du remplissage des données.</p>
-<p>19157 normalise et donne les méthodes et critéres de remplissage de la donnée.</p>
-<p>qualité interne: mise en place des contrôles sur la donnée produite en interne en interne pour atteindre les données optimale</p>
-<p>géoportail contrôles fait en WGS84</p>
-<p>Qualité externe = est ce que la donnée externe répond au besoins </p>
-<p>Se référer à des données référentielles, exemple sur geoservice.ign, dataset rge, …</p>
-<p>Remplir la généalogie de la donnée.</p>
-<h2 id="les-criteres-de-qualite">Les critères de qualité:</h2>
-<ul>
-<li>Exhaustivité</li>
-<li>Qualité temporelle</li>
-<li>cohérence logique</li>
-<li>Précision thématique</li>
-<li>Précision de position</li>
-</ul>
-<h2 id="les-mesures-les-methodes-devaluations-le-resultat">Les mesures, les méthodes d’évaluations, le résultat.</h2>
-<p>Méthode d'échantillonnage: nombre d’objets, surface couverte, emplacement.</p>
-<h2 id="strategies-deterministe-probabiliste-ou-expert">stratégies : déterministe, probabiliste ou expert.</h2>
-<p>lot de données doit être homogène, avec un process de prod constant, causes de non-conformité constante.
- selection aleatoire dans qgis 
-point régulier dans qgis pour semi-aléatoire ou créer une grille + filtre sur la grille (“id” %5 =0) puis selection par localisation.</p>
-<p>STARTIFIE = sélection aléatoire parmis des sous-ensemble pour faire un échantillon par champ(ou critère)  </p>
-<p>Traitement / modeleur graphique pour automatiser </p>
-<h2 id="exhaustivite">Exhaustivité :</h2>
-<p>vérifier excédents et omissions par rapport à des données de références.
-tx d’ exhaustivité =
-(Nb d’ omissions + nb d'excès) / base à auditer</p>
-<p>différence symétrique pour enlever les mauvaise géométries </p>
-<h2 id="coherence-temporelle">Cohérence temporelle:</h2>
-<p>exactitude, cohérence, validité </p>
-<h2 id="coherence-logique">cohérence logique:</h2>
-<p>conceptuelle selon le schéma (mcd), valeur, format, topologique.</p>
-<p>Calcul épaisseur, compacité.</p>
-<h2 id="precision-thematique">Précision thématique :</h2>
-<p>justesse de classement : matrice relative de classement erroné + tx de classement erroné
- et d’attributs : tx de valeur correct</p>
-<h2 id="mettre-en-place-des-validateurs-et-des-chaines-de-traitements">Mettre en place des validateurs et des chaînes de traitements.</h2></div>
+<h1 id="sources-de-donnees">Sources de données</h1>
+<h2 id="saint-lo-agglo">Saint-Lô Agglo</h2>
+<p><img alt="Saint-Lô Agglo" src="../img/saint-lo-agglo.jpg" /></p>
+<h1 id="sources-de-donnees_1">🗂 Sources de Données</h1>
+<h3 id="-donnees-papiers">- 📄 Données papiers</h3>
+<h2 id="donnees-sig-internes">🗺 Données SIG — Internes</h2>
+<h3 id="-plui">- PLUi</h3>
+<h3 id="-donnees-brutes-terrains">- Données brutes terrains</h3>
+<table>
+<thead>
+<tr>
+<th>Format</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>AutoCAD</code></td>
+</tr>
+<tr>
+<td><code>.shp</code></td>
+</tr>
+<tr>
+<td><code>.gpkg</code></td>
+</tr>
+<tr>
+<td><code>papier</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="-base-de-donnees-postgresql">- Base de données PostgreSQL</h3>
+<p>| Table / Vue       |
+| -------------------|
+| <code>troncon_eau</code>     |
+| <code>compteurs</code>       |
+| <code>vm_alerte_fuite</code> |
+''</p>
+<hr />
+<h2 id="donnees-sig-externes">🌐 Données SIG — Externes</h2>
+<table>
+<thead>
+<tr>
+<th>Source</th>
+<th>Format</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>BD Ortho IGN</td>
+<td>WMS / WMTS</td>
+</tr>
+<tr>
+<td>BD Topo IGN</td>
+<td>WMS / WMTS</td>
+</tr>
+<tr>
+<td>Cadastre</td>
+<td>bdd</td>
+</tr>
+<tr>
+<td>Données Régie Eau</td>
+<td>csv</td>
+</tr>
+</tbody>
+</table></div>
             </div>
         </div>
 
