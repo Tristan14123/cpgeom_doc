@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="author" content="CPGEOM Team" />
+      <link rel="shortcut icon" href="../img/favicon.ico" />
+    <title>🗄️ Geodatabase ESRI - Site de Documentation CPGEOM</title>
+    <link rel="stylesheet" href="../css/theme.css" />
+    <link rel="stylesheet" href="../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "\ud83d\uddc4\ufe0f Geodatabase ESRI";
+        var mkdocs_page_input_path = "page3.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href=".." class="icon icon-home"> Site de Documentation CPGEOM
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="..">📚 Centre de Formation en Géomatique</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../page1/">📋 Prérequis Techniques</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../page2/">🗺️ Sources de Données</a>
+                </li>
+              </ul>
+              <ul class="current">
+                <li class="toctree-l1 current"><a class="reference internal current" href="#">🗄️ Geodatabase ESRI</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#format-proprietaire-esri">📋 Format propriétaire ESRI</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#types-de-geodatabases">🗂️ Types de Geodatabases</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#geodatabase-fichier-gdb">📁 Geodatabase fichier (.gdb)</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#geodatabase-entreprise">🏢 Geodatabase entreprise</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#geodatabase-mobile">📱 Geodatabase mobile</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#types-de-donnees-dans-les-gdb">📊 Types de données dans les GDB</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#niveaux-dacces-arcgis">🔐 Niveaux d'accès ArcGIS</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#configuration-et-parametres">⚙️ Configuration et paramètres</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#fichier-dbtune">📝 Fichier DBTUNE</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#interoperabilite-avec-qgis">🔄 Interopérabilité avec QGIS</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#gestion-des-utilisateurs-et-permissions">👥 Gestion des utilisateurs et permissions</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#qui-peut-creer-une-gdb-entreprise">🔨 Qui peut créer une GDB entreprise ?</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#qui-peut-creer-des-utilisateurs-de-bd">👥 Qui peut créer des utilisateurs de BD ?</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#interoperabilite-des-donnees">🌐 Interopérabilité des données</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#configuration-des-connexions">🔧 Configuration des connexions</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#fichiers-de-configuration">📋 Fichiers de configuration</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#resume-des-points-cles">🎯 Résumé des points clés</a>
+    </li>
+    </ul>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../page4/">Qualité</a>
+                </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="..">Site de Documentation CPGEOM</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href=".." class="icon icon-home" aria-label="Docs"></a></li>
+      <li class="breadcrumb-item active">🗄️ Geodatabase ESRI</li>
+    <li class="wy-breadcrumbs-aside">
+          <a href="https://github.com/votre-utilisateur/cpgeom_doc/edit/master/docs/page3.md">Edit on cpgeom_doc</a>
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="geodatabase-esri">🗄️ Geodatabase ESRI</h1>
+<p>Format propriétaire ESRI, types de données et administration des bases de données géospatiales.</p>
+<hr />
+<h2 id="format-proprietaire-esri">📋 Format propriétaire ESRI</h2>
+<p>La geodatabase est le format de base de données propriétaire développé par ESRI pour stocker et gérer des données géospatiales.</p>
+<hr />
+<h2 id="types-de-geodatabases">🗂️ Types de Geodatabases</h2>
+<h3 id="geodatabase-fichier-gdb">📁 Geodatabase fichier (.gdb)</h3>
+<ul>
+<li>✅ <strong>Format .gdb</strong> : Format de fichier natif ESRI</li>
+<li>⚡ <strong>Performance supérieure</strong> : Possibilité de créer des index optimisés</li>
+<li>🔍 <strong>Indexation avancée</strong> : Index spatiaux et attributaires performants</li>
+</ul>
+<h3 id="geodatabase-entreprise">🏢 Geodatabase entreprise</h3>
+<ul>
+<li>👥 <strong>Limitée à 100 utilisateurs simultanés</strong></li>
+<li>🔐 <strong>Gestion centralisée</strong> : Administration multi-utilisateurs</li>
+<li>📊 <strong>Scalabilité</strong> : Adaptée aux organisations</li>
+</ul>
+<h3 id="geodatabase-mobile">📱 Geodatabase mobile</h3>
+<ul>
+<li>💾 <strong>Base SQLite</strong> : Fondée sur la technologie SQLite</li>
+<li>📏 <strong>Capacité maximale</strong> : 2To de stockage</li>
+<li>🌐 <strong>Usage mobile</strong> : Optimisée pour les applications de terrain</li>
+</ul>
+<hr />
+<h2 id="types-de-donnees-dans-les-gdb">📊 Types de données dans les GDB</h2>
+<p>Les geodatabases supportent trois principaux types de données géospatiales :</p>
+<table>
+<thead>
+<tr>
+<th>Type de données</th>
+<th>Description</th>
+<th>Exemples</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>📍 <strong>Classes d'entités</strong></td>
+<td>Lignes, polygones, points</td>
+<td>Routes, bâtiments, points d'intérêt</td>
+</tr>
+<tr>
+<td>🗺️ <strong>Jeux de données raster</strong></td>
+<td>Données matricielles</td>
+<td>Photos aériennes, MNT, images satellite</td>
+</tr>
+<tr>
+<td>📋 <strong>Tables</strong></td>
+<td>Données attributaires</td>
+<td>Informations descriptives, métadonnées</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="niveaux-dacces-arcgis">🔐 Niveaux d'accès ArcGIS</h2>
+<p>ArcGIS propose différents niveaux d'options qui déterminent les fonctionnalités accessibles selon le type de licence.</p>
+<p>!!! warning "Administration requise"
+    Il est nécessaire de créer deux types d'administrateurs :</p>
+<pre><code>- 👨‍💼 **Administrateurs de base de données** : Gestion PostgreSQL/Oracle
+- 🗄️ **Administrateurs de geodatabase** : Compte SDE par défaut
+</code></pre>
+<hr />
+<h2 id="configuration-et-parametres">⚙️ Configuration et paramètres</h2>
+<h3 id="fichier-dbtune">📝 Fichier DBTUNE</h3>
+<p><strong>DBTUNE</strong> est le fichier de paramètres de stockage avec des mots-clés de configuration.</p>
+<pre><code class="language-bash"># Exemple de configuration DBTUNE
+DEFAULTS
+GEOMETRY_STORAGE &quot;SDE_BINARY&quot;
+B_STORAGE &quot;PCTFREE 0 INITRANS 4&quot;
+</code></pre>
+<h3 id="interoperabilite-avec-qgis">🔄 Interopérabilité avec QGIS</h3>
+<p>!!! success "Pour l'interopérabilité des géométries avec QGIS"
+    Il faut lors de la création d'un schéma modifier la géométrie :</p>
+<pre><code>```
+SDE_BINARY → POSTGIS_GEOMETRY
+```
+</code></pre>
+<hr />
+<h2 id="gestion-des-utilisateurs-et-permissions">👥 Gestion des utilisateurs et permissions</h2>
+<h3 id="qui-peut-creer-une-gdb-entreprise">🔨 Qui peut créer une GDB entreprise ?</h3>
+<ul>
+<li>🐘 <strong>PostgreSQL</strong> : Administrateur de la base</li>
+<li>👤 <strong>SDE</strong> : Compte administrateur geodatabase</li>
+</ul>
+<h3 id="qui-peut-creer-des-utilisateurs-de-bd">👥 Qui peut créer des utilisateurs de BD ?</h3>
+<ul>
+<li>🔑 <strong>Connexion SDE</strong> : Seul le compte SDE peut créer des utilisateurs</li>
+</ul>
+<p>!!! warning "Bonnes pratiques pour le compte SDE"
+    - ✅ <strong>Peut créer des données</strong> : Oui, techniquement possible
+    - 🚫 <strong>Ne devrait pas créer de données</strong> : Pour pouvoir administrer efficacement
+    - 🏗️ <strong>Éviter les silos</strong> : Maintenir une séparation claire des rôles</p>
+<hr />
+<h2 id="interoperabilite-des-donnees">🌐 Interopérabilité des données</h2>
+<p>!!! success "Comment assurer l'interopérabilité ?"
+    <strong>En intégrant dans la base des données avec la géométrie PostGIS</strong></p>
+<pre><code>- 🔄 **Conversion automatique** : SDE_BINARY vers POSTGIS_GEOMETRY
+- 🌍 **Accès multi-plateformes** : QGIS, ArcGIS, applications web
+- 📡 **Standards ouverts** : Respect des normes OGC
+</code></pre>
+<hr />
+<h2 id="configuration-des-connexions">🔧 Configuration des connexions</h2>
+<h3 id="fichiers-de-configuration">📋 Fichiers de configuration</h3>
+<p><strong>Quel fichier permet de déterminer le nombre de connexions ?</strong></p>
+<ul>
+<li>📄 <strong>pg_hba.conf</strong> : Configuration des accès hôtes</li>
+<li>⚙️ <strong>postgresql.conf</strong> : Paramètres du serveur PostgreSQL</li>
+</ul>
+<pre><code class="language-bash"># Exemple postgresql.conf
+max_connections = 100
+shared_buffers = 256MB
+</code></pre>
+<hr />
+<h2 id="resume-des-points-cles">🎯 Résumé des points clés</h2>
+<p>!!! info "Points essentiels à retenir"
+    - 🏗️ <strong>Architecture</strong> : GDB fichier, entreprise, mobile
+    - 📊 <strong>Types de données</strong> : Entités, raster, tables
+    - 🔐 <strong>Administration</strong> : DB admin + SDE admin
+    - 🔄 <strong>Interopérabilité</strong> : POSTGIS_GEOMETRY pour QGIS
+    - ⚙️ <strong>Configuration</strong> : DBTUNE + fichiers PostgreSQL</p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../page2/" class="btn btn-neutral float-left" title="🗺️ Sources de Données"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../page4/" class="btn btn-neutral float-right" title="Qualité">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+        <span>
+          <a href="https://github.com/votre-utilisateur/cpgeom_doc" class="fa fa-code-fork" style="color: #fcfcfc"> cpgeom_doc</a>
+        </span>
+    
+    
+      <span><a href="../page2/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../page4/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "..";</script>
+    <script src="../js/theme_extra.js"></script>
+    <script src="../js/theme.js"></script>
+      <script src="../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

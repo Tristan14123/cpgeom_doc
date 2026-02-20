@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="author" content="CPGEOM Team" />
+      <link rel="shortcut icon" href="../img/favicon.ico" />
+    <title>📋 Prérequis Techniques - Site de Documentation CPGEOM</title>
+    <link rel="stylesheet" href="../css/theme.css" />
+    <link rel="stylesheet" href="../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "\ud83d\udccb Pr\u00e9requis Techniques";
+        var mkdocs_page_input_path = "page1.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href=".." class="icon icon-home"> Site de Documentation CPGEOM
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="..">📚 Centre de Formation en Géomatique</a>
+                </li>
+              </ul>
+              <ul class="current">
+                <li class="toctree-l1 current"><a class="reference internal current" href="#">📋 Prérequis Techniques</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#activer-installer-wsl">🐧 Activer / Installer WSL</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#installer-git">🔧 Installer Git</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#creer-un-repository-sur-github">🚀 Créer un repository sur GitHub</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#possibilite-de-cloner-le-repository">📥 Possibilité de cloner le repository</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#prochaines-etapes">🎉 Prochaines étapes</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#initialisation-du-repository">🚀 Initialisation du repository</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#premier-push">📤 Premier push</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#configuration-git-retenir-les-mots-de-passe">🔐 Configuration Git - retenir les mots de passe</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#recapitulatif-des-competences-acquises">✅ Récapitulatif des compétences acquises</a>
+    </li>
+    </ul>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../page2/">🗺️ Sources de Données</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../page3/">🗄️ Geodatabase ESRI</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../page4/">Qualité</a>
+                </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="..">Site de Documentation CPGEOM</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href=".." class="icon icon-home" aria-label="Docs"></a></li>
+      <li class="breadcrumb-item active">📋 Prérequis Techniques</li>
+    <li class="wy-breadcrumbs-aside">
+          <a href="https://github.com/votre-utilisateur/cpgeom_doc/edit/master/docs/page1.md">Edit on cpgeom_doc</a>
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="prerequis-techniques">📋 Prérequis Techniques</h1>
+<p>Configuration initiale de l'environnement de développement pour la géomatique.</p>
+<hr />
+<h2 id="activer-installer-wsl">🐧 Activer / Installer WSL</h2>
+<p>Pour commencer, nous allons installer le Sous-système Windows pour Linux (WSL) qui vous permettra d'utiliser un environnement Linux directement sur Windows.</p>
+<pre><code class="language-bash">wsl --install
+
+wsl --list
+</code></pre>
+<p>!!! info "Note importante"
+    Après l'installation, redémarrez votre ordinateur et suivez les instructions pour configurer votre distribution Linux préférée (Ubuntu est recommandée).</p>
+<hr />
+<h2 id="installer-git">🔧 Installer Git</h2>
+<p>Une fois WSL installé, ouvrez votre terminal Linux et installez Git pour le contrôle de version.</p>
+<pre><code class="language-bash">sudo apt update
+sudo apt install git
+</code></pre>
+<p>!!! success "Configuration recommandée"
+    Après l'installation, configurez votre identité Git :</p>
+<pre><code>```bash
+git config --global user.name "Votre Nom"
+git config --global user.email "votre.email@example.com"
+```
+</code></pre>
+<hr />
+<h2 id="creer-un-repository-sur-github">🚀 Créer un repository sur GitHub</h2>
+<p>Suivez ces étapes pour créer votre premier repository GitHub :</p>
+<ol>
+<li><strong>Allez sur github.com</strong> et connectez-vous à votre compte (ou créez-en un si nécessaire).</li>
+<li><strong>Cliquez sur "New repository"</strong> dans le menu déroulant en haut à droite.</li>
+<li><strong>Donnez un nom au repo</strong> (par exemple : "cpgeom_doc").</li>
+<li><strong>Cocher "Add a README file"</strong> pour initialiser votre repository avec un fichier de description.</li>
+<li><strong>Cliquez sur "Create repository"</strong> pour finaliser la création.</li>
+</ol>
+<hr />
+<h2 id="possibilite-de-cloner-le-repository">📥 Possibilité de cloner le repository</h2>
+<p>Une fois votre repository créé sur GitHub, vous pouvez le cloner localement pour commencer à travailler :</p>
+<pre><code class="language-bash">git clone https://github.com/votre-utilisateur/votre-repo.git
+</code></pre>
+<p>!!! warning "Important"
+    Remplacez <code>votre-utilisateur</code> et <code>votre-repo</code> par vos véritables nom d'utilisateur et nom de repository GitHub.</p>
+<hr />
+<h2 id="prochaines-etapes">🎉 Prochaines étapes</h2>
+<p>Félicitations ! Vous avez maintenant configuré votre environnement de développement. Voici les commandes Git essentielles :</p>
+<h3 id="initialisation-du-repository">🚀 Initialisation du repository</h3>
+<pre><code class="language-bash">git init
+</code></pre>
+<h3 id="premier-push">📤 Premier push</h3>
+<pre><code class="language-bash">git push -u origin main
+</code></pre>
+<h3 id="configuration-git-retenir-les-mots-de-passe">🔐 Configuration Git - retenir les mots de passe</h3>
+<pre><code class="language-bash">git config --global credential.helper store
+</code></pre>
+<p>!!! tip "Astuce"
+    Avec cette configuration, Git mémorisera vos identifiants GitHub pour éviter de les saisir à chaque push.</p>
+<hr />
+<h2 id="recapitulatif-des-competences-acquises">✅ Récapitulatif des compétences acquises</h2>
+<ul>
+<li>🐧 <strong>Utiliser WSL</strong> pour un environnement Linux performant</li>
+<li>🌐 <strong>Gérer vos versions</strong> avec Git</li>
+<li>🤝 <strong>Collaborer</strong> via GitHub</li>
+</ul>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href=".." class="btn btn-neutral float-left" title="📚 Centre de Formation en Géomatique"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../page2/" class="btn btn-neutral float-right" title="🗺️ Sources de Données">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+        <span>
+          <a href="https://github.com/votre-utilisateur/cpgeom_doc" class="fa fa-code-fork" style="color: #fcfcfc"> cpgeom_doc</a>
+        </span>
+    
+    
+      <span><a href=".." style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../page2/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "..";</script>
+    <script src="../js/theme_extra.js"></script>
+    <script src="../js/theme.js"></script>
+      <script src="../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

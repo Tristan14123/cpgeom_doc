@@ -10,7 +10,8 @@ Bienvenue dans votre espace de documentation technique spécialisé en géomatiq
 | ---------------------------| --------------------------------------------------------------| ----------------------------------------|
 | 📋 **Prérequis**　　　　　| Configuration initiale de l'environnement de développement   | [Page 1: Prérequis](page1.md)          |
 | 🗺️ **Sources de données** | Données de référence, IGN, projets IA et accès WMS | [Page 2: Sources de données](page2.md) |
-| 🗄️ **Geodatabase ESRI**　 | Format propriétaire ESRI, types de données et administration | [Page 3: Geodatabase](page3.md)        |
+| � **Détails sources** | Formats de données, bases PostgreSQL et sources externes | [Page 2.1: Détails sources](page2.1.md) |
+| �🗄️ **Geodatabase ESRI**　 | Format propriétaire ESRI, types de données et administration | [Page 3: Geodatabase](page3.md)        |
 | 📋 **Qualité**　　　　　　| Qualité des données, métadonnées, interopérabilité           | [Page 4: Qualité](page4.md)            |
 ---
 

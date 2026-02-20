@@ -7,4 +7,39 @@ repo_name: cpgeom_doc
 repo_url: https://github.com/votre-utilisateur/cpgeom_doc
 
 theme:
-  name: readthedocs
+  name: material
+  language: fr
+  palette:
+    - scheme: default
+      primary: blue
+      accent: blue
+      toggle:
+        icon: material/brightness-7
+        name: Passer au mode sombre
+    - scheme: slate
+      primary: blue
+      accent: blue
+      toggle:
+        icon: material/brightness-4
+        name: Passer au mode clair
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - search.highlight
+    - search.share
+
+nav:
+  - Accueil: index.md
+  - Introduction:
+    - page1.md
+  - Sources de données:
+    - page2.md
+    - page2.1.md
+  - Méthodologie:
+    - page3.md
+  - Résultats:
+    - page4.md
+  - Conclusion:
+    - page5.md
