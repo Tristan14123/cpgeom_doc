@@ -37,10 +37,11 @@
 
 ## 🌐 Données SIG — Externes
 
-| Source            | Format |
-| -------------------| --------|
-| BD Ortho IGN      |        |
-| BD Topo IGN       |        |
-| Cadastre          |        |
-| Données Régie Eau | csv    |
+| Source            | Format     |
+| -------------------| ------------|
+| BD Ortho IGN      | WMS / WMTS |
+| BD Topo IGN       | WMS / WMTS |
+| Cadastre          | bdd        |
+| Données Régie Eau | csv        |
+
 
