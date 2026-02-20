@@ -2,7 +2,11 @@
 
 Bienvenue dans votre espace de documentation technique spécialisé en géomatique et systèmes d'information géographique.
 
+<br>
+
 ---
+
+<br>
 
 ## 🚀 Navigation Rapide
 
@@ -11,9 +15,14 @@ Bienvenue dans votre espace de documentation technique spécialisé en géomatiq
 | 📋 **Prérequis**　　　　　| Configuration initiale de l'environnement de développement   | [Page 1: Prérequis](page1.md)           |
 | 🗺️ **Sources de données** | Données de référence, IGN, projets IA et accès WMS           | [Page 2: Sources de données](page2.md)  |
 | **Détails sources**　　　 | Formats de données, bases PostgreSQL et sources externes     | [Page 2.1: Détails sources](page2.1.md) |
-| 🗄️ **Geodatabase ESRI**　| Format propriétaire ESRI, types de données et administration | [Page 3: Geodatabase](page3.md)         |
+| 🗄️ **Geodatabase ESRI**　 | Format propriétaire ESRI, types de données et administration | [Page 3: Geodatabase](page3.md)         |
 | 📋 **Qualité**　　　　　　| Qualité des données, métadonnées, interopérabilité           | [Page 4: Qualité](page4.md)             |
+
+<br>
+
 ---
+
+<br>
 
 ## 🎯 Objectifs Principaux
 
@@ -21,15 +30,25 @@ Bienvenue dans votre espace de documentation technique spécialisé en géomatiq
 - ✅ **Apprentissage GitHub** : Maîtriser les concepts de versionnement et de collaboration
 - ✅ **Documentation structurée** : Organiser l'information de manière claire et accessible
 
+<br>
+
 ---
 
+<br>
+
 ## 📖 Contenu du Guide
+
+<br>
 
 ### 🔧 Guides d'installation
 Configuration des outils essentiels pour la géomatique : WSL, Git, et environnement de développement.
 
+<br>
+
 ### 🌐 Tutoriels Git
 De la création de repository au versionnement, maîtrisez le contrôle de version pour vos projets.
+
+<br>
 
 ### 💡 Bonnes pratiques
 Recommandations et workflows efficaces pour vos projets géomatiques.
@@ -61,6 +80,8 @@ Votre documentation est un projet vivant ! N'hésitez pas à :
 [Page 1: Prérequis](page1.md) → Votre première étape vers la maîtrise technique
 
 [Page 2: Sources de données](page2.md) → Comprendre les références et données à créer
+
+[Page 2.1: Détails sources](page2.1.md) → Formats de données, bases PostgreSQL et sources externes
 
 [Page 3: Geodatabase ESRI](page3.md) → Format propriétaire ESRI, types de données et administration
 
