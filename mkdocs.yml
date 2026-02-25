@@ -7,7 +7,39 @@ repo_name: cpgeom_doc
 repo_url: https://github.com/votre-utilisateur/cpgeom_doc
 
 theme:
-  name: mkdocs
+  name: material
+  language: fr
+  palette:
+    - scheme: slate
+      primary: green
+      accent: lime
+      toggle:
+        icon: material/brightness-4
+        name: Mode Matrix
+    - scheme: default
+      primary: black
+      accent: green
+      toggle:
+        icon: material/brightness-7
+        name: Mode Normal
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - search.highlight
+    - search.share
+    - content.code.copy
+    - content.tabs.link
+  font:
+    text: Roboto Mono
+    code: Roboto Mono
+
+extra_javascript:
+  - https://unpkg.com/leaflet@1.9.4/dist/leaflet.js
+
+extra_css:
+  - https://unpkg.com/leaflet@1.9.4/dist/leaflet.css
 
 nav:
   - Accueil: index.md
@@ -18,7 +50,9 @@ nav:
     - page2.1.md
   - Méthodologie:
     - page3.md
-  - Résultats:
+  - Qualité:
     - page4.md
-  - Conclusion:
+  - Interopérabilité et métadonnées:
     - page5.md
+  - MEMologie:
+    - page6.md
