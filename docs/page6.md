@@ -253,8 +253,9 @@ Les mèmes sur l'application de géolocalisation :
 <br>
 
 ---
-
+![alt text](image-5.png)
 <br>
+
 
 ### 🎓 Les Mèmes Académiques en Géomatique
 

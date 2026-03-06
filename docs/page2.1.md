@@ -4,7 +4,10 @@
 
 ![Saint-Lô Agglo](img/saint-lo-agglo.jpg)
 
-https://www.saint-lo-agglo.fr/fr/annuaire-g%C3%A9n%C3%A9ral/carte
+[saint-lo-agglo.fr](https://www.saint-lo-agglo.fr/fr/annuaire-g%C3%A9n%C3%A9ral/carte)
+
+La belle ville de Saint-Lo se trouve en Normandie, dans le département de la Manche.
+
 
 # 🗂 Sources de Données
 

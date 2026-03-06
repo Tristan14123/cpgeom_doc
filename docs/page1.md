@@ -92,3 +92,35 @@ git config --global credential.helper store
 - 🐧 **Utiliser WSL** pour un environnement Linux performant
 - 🌐 **Gérer vos versions** avec Git
 - 🤝 **Collaborer** via GitHub
+
+## Lancer son git
+### Activer le mode venv 
+```bash
+source .venv/bin/activate
+```
+
+Résumé
+```bash
+git status # liste 
+git add . # ajoute
+git commit -m "mise à jour" #maj
+git push -u main #lancement maj
+```
+
+possibilité d'installer un theme material et de lancer directement :
+```bash
+mkdocs gh-deploy
+```
+
+Ce qu'il fait :
+```bash
+INFO    -  Cleaning site directory
+INFO    -  Building documentation
+INFO    -  Copying '/site' to 'gh-pages'
+INFO    -  Pushing to GitHub
+```
+
+Possibilité de tout faire d'un coup :
+```bash
+git add . && git commit -m "update" && git push && mkdocs gh-deploy
+```

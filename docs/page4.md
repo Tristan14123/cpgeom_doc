@@ -11,8 +11,8 @@ Définition des standards, exemple PLUI
 
 Voir : Consigne de saisie des métadonnées INSPIRE .
  
-# INSPIRE =
-directive européenne , création des portails de téléchargement.
+# INSPIRE 
+Directive européenne , création des portails de téléchargement.
 
 qualité des métadonnées = qualité du remplissage des données.
 

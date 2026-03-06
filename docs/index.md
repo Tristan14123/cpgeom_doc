@@ -92,8 +92,6 @@ Votre documentation est un projet vivant ! N'hésitez pas à :
 [Page 5: Interopérabilité et métadonnées](page5.md) → Standards, processus, FAIR/TAIR, web services
 
 
-
-
 <div style="text-align: center; font-style: italic; color: #007acc;">
 <p>"Fait avec amour et passion par Tristan Vachaudez"</p>
 <p>et un peu d'IA</p>

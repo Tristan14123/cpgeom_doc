@@ -161,3 +161,55 @@ Interet des metadonnées :
 - facilite la recherche et la localisation des données
 - permet de comprendre le contexte et l'origine des données, comment elle a été produite ?
 - facilite la gestion des droits d'accès et de protection des données
+
+Le but est donc de créer un catalogue de données avec des métadonnées en accord avec les normes **ISO 19115** et **ISO 19119**.
+
+<br>
+
+![alt text](image-6.png)
+
+## Standards des metadonnées :
+- **ISO 19115** : métadonnées, publié en 2003 et adapté par l'union européenne en 2007 pour créer la norme Inspire.
+
+- **ISO 19119** : services géographiques
+
+- **DCAT** : interoperabilité des données catalogues et données web
+  - version GEODECAT : https://doc.data.gouv.fr/moissonnage/dcat/
+  
+- **RDF** : Resource Description Framework, le but est de permettre la description des données dans un format standardisé.
+
+- **CNIG** : Centre National d'Information Géolocalisée travail sur les metadonnees.
+ [cnig.fr/](https://cnig.gouv.fr/gt-metadonnees-a958.html)
+
+## Quelle forme pour les metadonnees ?
+
+| IDENTIFICATION DES RESSOURCES  |
+| --------------------------------|
+| titre                          |
+| résumé                         |
+| mot-clé (référentiels inspire) |
+
+| VERSION             |
+| ---------------------|
+| Date de publication |
+| Date de mise à jour |
+
+| QUALITE                              |
+| --------------------------------------|
+| mesures, précision                   |
+| généalogie : auteur, processus, etc. |
+
+Régles de mise en œuvre :
+Identifications
+classifications et services géographiques 
+
+[Guide de saisie des éléments de metadonnees inspire](https://cnig.gouv.fr/IMG/pdf/guide-de-saisie-des-elements-de-metadonnees-inspire-v2.0-allege.pdf)
+
+
+### Contraintes d'utilisation :
+Conditions d'accès et d'utilisation
+Restriction concernant le public
+
+Outils de cataloguages :
+- **GeoNetwork**
+- **CKAN** 
