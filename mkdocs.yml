@@ -54,5 +54,9 @@ nav:
     - page4.md
   - Interopérabilité et métadonnées:
     - page5.md
-  - MEMologie:
-    - page6.md
+  - VRT:
+    - page7.md
+  - OGR/GDAL:
+    - page8.md
+  - Base de données:
+    - page9.md
