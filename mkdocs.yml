@@ -19,9 +19,14 @@ theme:
     - scheme: default
       primary: black
       accent: green
+       # Mode Rainbow clair
+    - scheme: default
+      primary: pink
+      accent: lime
       toggle:
-        icon: material/brightness-7
-        name: Mode Normal
+        icon: material/weather-sunny
+        name: Mode Rainbow Light 🌈
+        
   features:
     - navigation.tabs
     - navigation.sections

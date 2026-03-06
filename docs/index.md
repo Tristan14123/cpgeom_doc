@@ -10,17 +10,17 @@ Bienvenue dans votre espace de documentation technique spécialisé en géomatiq
 
 ## 🚀 Navigation Rapide
 
-| Section　　　　　　　　　　　| Description                                                     | Lien                           |
-| ------------------------------| -----------------------------------------------------------------| --------------------------------|
-| 📋 **Prérequis**　　　　　　 | Configuration initiale de l'environnement de développement      | [Prérequis](page1.md)          |
-| 🗺️ **Sources de données**　　| Données de référence, IGN, projets IA et accès WMS              | [Sources de données](page2.md) |
-| **Détails sources**　　　　　| Formats de données, bases PostgreSQL et sources externes        | [Détails sources](page2.1.md)  |
-| 🗄️ **Geodatabase ESRI**　　　| Format propriétaire ESRI, types de données et administration    | [Geodatabase](page3.md)        |
-| 📋 **Qualité**　　　　　　　 | Qualité des données, métadonnées, interopérabilité              | [Qualité](page4.md)            |
-| 🌐 **Interopérabilité**　　　| Standards, processus, FAIR/TAIR, web services                   | [Interopérabilité](page5.md)   |
-| page7.md **VRT**　　　　　　 | comment fonctionne les VRT et comment les utiliser              | [VRT](page7.md)                |
-| page8.md **OGR/GDAL**　　　　| comment fonctionne OGR/GDAL et comment l'utiliser               | [OGR/GDAL](page8.md)           |
-| page9.md **Base de données** | comment fonctionne les bases de données et comment les utiliser | [Base de données](page9.md)    |
+| Section　　　　　　　　　 | Description                                                     | Lien                           |
+| ---------------------------| -----------------------------------------------------------------| --------------------------------|
+| 📋 **Prérequis**　　　　　| Configuration initiale de l'environnement de développement      | [Prérequis](page1.md)          |
+| 🗺️ **Sources de données** | Données de référence, IGN, projets IA et accès WMS              | [Sources de données](page2.md) |
+| **Détails sources**　　　 | Formats de données, bases PostgreSQL et sources externes        | [Détails sources](page2.1.md)  |
+| 🗄️ **Geodatabase ESRI**　 | Format propriétaire ESRI, types de données et administration    | [Geodatabase](page3.md)        |
+| 📋 **Qualité**　　　　　　| Qualité des données, métadonnées, interopérabilité              | [Qualité](page4.md)            |
+| 🌐 **Interopérabilité**　 | Standards, processus, FAIR/TAIR, web services                   | [Interopérabilité](page5.md)   |
+| **VRT**　　　　　　　　　 | comment fonctionne les VRT et comment les utiliser              | [VRT](page7.md)                |
+| **OGR/GDAL**　　　　　　　| comment fonctionne OGR/GDAL et comment l'utiliser               | [OGR/GDAL](page8.md)           |
+| **Base de données**　　　 | comment fonctionne les bases de données et comment les utiliser | [Base de données](page9.md)    |
 <br>
 
 ---
