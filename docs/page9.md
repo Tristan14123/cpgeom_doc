@@ -1,7 +1,4 @@
-
 <span style="font-size:32px;color:green">**Administrer son serveur de base de données**</span>
-
-
 
 **Objectif:**
 
@@ -31,7 +28,6 @@ Postgres +  depot Debian /Ubuntu linux
 et un ``.exe`` windows
 
 Une base de dev et une base de production a prendre en consideratipon pour le dimenssionnement .
-
 
 ### 2. Création d'une BDD
 
@@ -118,10 +114,6 @@ copier le fichier postgresql.conf
 sudo cp /etc/postgresql/16/main/postgresql.conf  /etc/postgresql/16/main/postgresql_ini.conf
 ```
 
-
-
-
-
 - Utilisation de  [**pgtune :**](https://pgtune.leopard.in.ua/) pour configurer
 
   - DB version
@@ -184,7 +176,6 @@ pg_dump -f sauv_bdd_auto.sql -U postgres -d idgeo_locale
 chmod a+x script_sauv_bdd.sh
 
 crontab -e puis modifier l'heure en bas 
-
 
 une fois dans la base :
 ```lister les base = \l

@@ -9,6 +9,9 @@ repo_url: https://github.com/votre-utilisateur/cpgeom_doc
 theme:
   name: material
   language: fr
+  icon:
+    logo: docs/moi.png
+  favicon: docs/moi.png
   palette:
     - scheme: slate
       primary: green
@@ -17,12 +20,8 @@ theme:
         icon: material/brightness-4
         name: Mode Matrix
     - scheme: default
-      primary: black
+      primary: green
       accent: green
-       # Mode Rainbow clair
-    - scheme: default
-      primary: pink
-      accent: lime
       toggle:
         icon: material/weather-sunny
         name: Mode Rainbow Light 🌈
