@@ -9,7 +9,7 @@
         <meta name="description" content="Centre de ressources techniques spécialisé en géomatique et systèmes d'information géographique">
       
       
-        <meta name="author" content="CPGEOM Team">
+        <meta name="author" content="Tristan">
       
       
       
@@ -23,11 +23,11 @@
       
       
       <link rel="icon" href="../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.2">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.3">
     
     
       
-        <title>📋 Prérequis Techniques - Site de Documentation CPGEOM</title>
+        <title>📋 Prérequis Techniques - Documentation CPGEOM 25-27</title>
       
     
     
@@ -94,7 +94,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="En-tête">
-    <a href=".." title="Site de Documentation CPGEOM" class="md-header__button md-logo" aria-label="Site de Documentation CPGEOM" data-md-component="logo">
+    <a href=".." title="Documentation CPGEOM 25-27" class="md-header__button md-logo" aria-label="Documentation CPGEOM 25-27" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -108,7 +108,7 @@
       <div class="md-header__ellipsis">
         <div class="md-header__topic">
           <span class="md-ellipsis">
-            Site de Documentation CPGEOM
+            Documentation CPGEOM 25-27
           </span>
         </div>
         <div class="md-header__topic" data-md-component="header-topic">
@@ -387,13 +387,13 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href=".." title="Site de Documentation CPGEOM" class="md-nav__button md-logo" aria-label="Site de Documentation CPGEOM" data-md-component="logo">
+    <a href=".." title="Documentation CPGEOM 25-27" class="md-nav__button md-logo" aria-label="Documentation CPGEOM 25-27" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
 
     </a>
-    Site de Documentation CPGEOM
+    Documentation CPGEOM 25-27
   </label>
   
     <div class="md-nav__source">
@@ -662,6 +662,34 @@
       
     </span>
   </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lancer-son-git" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Lancer son git
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Lancer son git">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#activer-le-mode-venv" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Activer le mode venv
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1285,6 +1313,34 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#lancer-son-git" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Lancer son git
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Lancer son git">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#activer-le-mode-venv" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Activer le mode venv
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1367,6 +1423,28 @@ git config --global user.email "votre.email@example.com"
 <li>🌐 <strong>Gérer vos versions</strong> avec Git</li>
 <li>🤝 <strong>Collaborer</strong> via GitHub</li>
 </ul>
+<h2 id="lancer-son-git">Lancer son git</h2>
+<h3 id="activer-le-mode-venv">Activer le mode venv</h3>
+<pre><code class="language-bash">source .venv/bin/activate
+</code></pre>
+<p>Résumé</p>
+<pre><code class="language-bash">git status # liste 
+git add . # ajoute
+git commit -m &quot;mise à jour&quot; #maj
+git push -u main #lancement maj
+</code></pre>
+<p>possibilité d'installer un theme material et de lancer directement :</p>
+<pre><code class="language-bash">mkdocs gh-deploy
+</code></pre>
+<p>Ce qu'il fait :</p>
+<pre><code class="language-bash">INFO    -  Cleaning site directory
+INFO    -  Building documentation
+INFO    -  Copying '/site' to 'gh-pages'
+INFO    -  Pushing to GitHub
+</code></pre>
+<p>Possibilité de tout faire d'un coup :</p>
+<pre><code class="language-bash">git add . &amp;&amp; git commit -m &quot;update&quot; &amp;&amp; git push &amp;&amp; mkdocs gh-deploy
+</code></pre>
 
 
 
